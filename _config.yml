@@ -1,0 +1,126 @@
+##########################
+## Site Config Settings ##
+##########################
+
+# Theme version
+version: 2.0.1
+
+# Header
+menu:
+  - page: home
+    directory: .
+    icon: fa-home
+  - page: archive
+    directory: archives/
+    icon: fa-archive
+  - page: about
+    directory: about/
+    icon: fa-user
+  - page: rss
+    directory: atom.xml
+    icon: fa-rss
+
+# Sidebar
+widgets:
+  - recent_posts
+  - category
+  - tag
+  - archive
+  #- weibo
+  - links
+
+# Toc
+toc:
+  enable: true
+  number: false
+
+# Static files
+js: js
+css: css
+
+# Date_formats
+date_formats:
+  archive: "MM月DD日"
+  category: "YYYY/MM/DD"
+  post: "MMM DD, YYYY"
+  tag: "YYYY/MM/DD"
+
+# Extensions
+Plugins:
+  hexo-generator-feed
+  hexo-generator-sitemap
+  hexo-generator-baidu-sitemap
+
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+#sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+#Local search
+local_search: true ## Use a javascript-based local search engine, true/false.
+
+#Cmments
+comment:
+  duoshuo: #chaooo ## duoshuo_shortname
+  disqus: ## disqus_shortname
+  livere: ## 来必力(data-uid)
+  uyan: ## 友言id
+  cloudTie: ## 网易云跟帖(productKey)
+  changyan: ## 畅言需在下方配置两个参数，此处不填。
+    appid: ## 畅言(appid)
+    appkey: ##畅言(appkey)
+
+#Share
+baidu_share: true ## 百度分享
+JiaThis_share: true ##JiaThis分享
+duoshuo_share: #true ##true 多说分享必须和多说评论一起使用。
+addToAny_share: # AddToAny share. Empty list hides. List items are service name at url. For ex: email for '<a href="https://www.addtoany.com/add_to/email?linkurl=...'
+#  - twitter
+#  - baidu
+#  - facebook
+#  - google_plus
+#  - linkedin
+#  - email
+
+# Analytics
+google_analytics: ## Your Google Analytics tracking id, e.g. UA-42025684-2
+baidu_analytics:  ## Your Baidu Analytics tracking id, e.g. 3f3a5a8fd2b4cc3b3813fd00426fa25d
+
+# Miscellaneous
+show_category_count: true ## If you want to show the count of categories in the sidebar widget please set the value to true.
+widgets_on_small_screens: true ## Set to true to enable widgets on small screens.
+busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
+
+# 关于页面
+about:
+  photo_url:  ## Your photo e.g. http://ot6vbgl2y.bkt.clouddn.com/17-7-16/43780504.jpg
+  items:
+  - label: email
+    url: ## Your email with mailto: e.g.  mailto:taocg1997@qq.com 
+    title: ## Your email e.g.  taocg1997@qq.com 
+  - label: github
+    url:  ## Your github'url e.g.  https://github.com/MrStronger
+    title:  ## Your github'name e.g.  MrStronger
+  - label: weibo
+    url: ## Your weibo's url e.g.  http://weibo.com/MrStronger
+    title: ## Your weibo's name e.g.  MrStronger
+# - label: twitter
+#   url: 
+#   title:
+# - label: facebook
+#   url:
+#   title:
+
+# 友情链接
+links:
+  - title: ## 
+    url: ## 
+  - title: ##
+    url: ##
