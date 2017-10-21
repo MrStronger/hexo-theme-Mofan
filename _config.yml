@@ -71,15 +71,15 @@ comment:
   duoshuo: #chaooo ## duoshuo_shortname
   disqus: ## disqus_shortname
   livere: ## 来必力(data-uid)
-  uyan: ## 友言id
+  uyan: 2131218
   cloudTie: ## 网易云跟帖(productKey)
   changyan: ## 畅言需在下方配置两个参数，此处不填。
     appid: ## 畅言(appid)
     appkey: ##畅言(appkey)
 
 #Share
-baidu_share: true ## 百度分享
-JiaThis_share: true ##JiaThis分享
+baidu_share: #true ## 百度分享
+JiaThis_share: #true ##JiaThis分享
 duoshuo_share: #true ##true 多说分享必须和多说评论一起使用。
 addToAny_share: # AddToAny share. Empty list hides. List items are service name at url. For ex: email for '<a href="https://www.addtoany.com/add_to/email?linkurl=...'
 #  - twitter
@@ -91,26 +91,26 @@ addToAny_share: # AddToAny share. Empty list hides. List items are service name 
 
 # Analytics
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42025684-2
-baidu_analytics:  ## Your Baidu Analytics tracking id, e.g. 3f3a5a8fd2b4cc3b3813fd00426fa25d
+baidu_analytics: 3f3a5a8fd2b4cc3b3813fd00426fa25d ## Your Baidu Analytics tracking id, e.g. 1006843030519956000
 
 # Miscellaneous
 show_category_count: true ## If you want to show the count of categories in the sidebar widget please set the value to true.
 widgets_on_small_screens: true ## Set to true to enable widgets on small screens.
 busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 
-# 关于页面
+# About page
 about:
-  photo_url:  ## Your photo e.g. http://ot6vbgl2y.bkt.clouddn.com/17-7-16/43780504.jpg
+  photo_url: http://ot6vbgl2y.bkt.clouddn.com/17-7-16/43780504.jpg ## Your photo e.g. http://obzf7z93c.bkt.clouddn.com/themeauthor.jpg
   items:
   - label: email
-    url: ## Your email with mailto: e.g.  mailto:taocg1997@qq.com 
-    title: ## Your email e.g.  taocg1997@qq.com 
+    url: mailto:taocg1997@qq.com ## Your email with mailto: e.g.  mailto:zhenggchaoo@gmail.com
+    title: taocg1997@qq.com ## Your email e.g.  zhenggchaoo@gmail.com
   - label: github
-    url:  ## Your github'url e.g.  https://github.com/MrStronger
-    title:  ## Your github'name e.g.  MrStronger
+    url: https://github.com/MrStronger ## Your github'url e.g.  https://github.com/chaooo
+    title: MrStronger ## Your github'name e.g.  chaooo
   - label: weibo
-    url: ## Your weibo's url e.g.  http://weibo.com/MrStronger
-    title: ## Your weibo's name e.g.  MrStronger
+    url: ## Your weibo's url e.g.  http://weibo.com/zhengchaooo
+    title: ## Your weibo's name e.g.  秋过冬漫长
 # - label: twitter
 #   url: 
 #   title:
@@ -118,9 +118,9 @@ about:
 #   url:
 #   title:
 
-# 友情链接
+# Links widget. Empty links will hide widget.
 links:
-  - title: ## 
-    url: ## 
-  - title: ##
-    url: ##
+  - title: 时光笔记
+    url: http://mofan_tcg.coding.me/
+  - title: React小相册
+    url: http://realtcg.com/Precious-Memories/

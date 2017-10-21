@@ -36,6 +36,30 @@ window.onscroll = function() {
       winHeight,
       fixedToc = document.getElementById("toc"),
       changeSize = document.getElementById("header").offsetHeight + document.getElementById("sidebar").offsetHeight;
+  var logoImg = document.getElementsByClassName("logoImg")[0]
+  var name = document.getElementById('hidden')
+  var list = document.getElementById("nav-menu")
+  var header = document.getElementById("header")
+  var clientWidth = document.body.clientWidth
+  
+  if (clientWidth < 500 && scroll > 10) {
+    logoImg.style.transform = 'translate(0px,30px)'
+    name.style.transform = 'translate(0,-60px)'
+    name.style.fontSize = '30px'
+    list.style.transform = 'translate(0px,' + '-200px)'
+    list.style.transition = 'opacity .5s'
+    list.style.opacity = 0
+    header.style.height = '70px'
+  } else if (clientWidth < 500 && scroll < 10) {
+    logoImg.style.transform = 'translate(0,0)'
+    name.style.transform = 'translate(0,0)'
+    header.style.height = '194px'
+    name.style.fontSize = '40px'
+    list.style.transform = 'translate(0,0)'
+    list.style.transition = 'opacity 2s'
+    list.style.opacity = 1
+    
+  }
   if (scroll >= 300) {
     addClass(totop,"show");
     //totop.classList.add("show");

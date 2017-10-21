@@ -25,7 +25,7 @@ html(lang='#{config.language}')
     if config.keywords
       meta(name="keywords",content=config.keywords)
     block title
-    link(rel="stylesheet", type="text/css", href="//fonts.css.network/css?family=Source+Code+Pro")
+    
     link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/style.css' + '?v=' + theme.version)
     link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/highlight.css' + '?v=' + theme.version)
     link(rel='Shortcut Icon', href=url_for('favicon.ico'))
@@ -41,7 +41,7 @@ html(lang='#{config.language}')
         .site-name
           a#logo(href=url_for('.'))
             img.logoImg(src='http://ot6vbgl2y.bkt.clouddn.com/17-7-18/91792276.jpg')
-            span.hidden= current_title
+            span#hidden= current_title
         #nav-menu
           - for (var i in theme.menu)
             +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)

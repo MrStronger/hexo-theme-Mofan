@@ -149,6 +149,7 @@ body
   padding-right: 40px
 
 /* header */
+
 #header
   width: 100%
   left: 0
@@ -158,7 +159,8 @@ body
   background-color: #2a2929
   padding: 20px 100px 20px 100px
   z-index: 1010
-  span.hidden
+  transition: .5s
+  span#hidden
     font-size:40px
     vertical-align:middle
     font-weight:200
@@ -194,9 +196,13 @@ body
   vertical-align:middle
 
 #nav-menu
-  padding: 0
-  float:right
+  padding: 0;
+  position: absolute;
+  right: 90px;
+  background: #2a2929;
+  opacity: 0.95;
   line-height:55px
+  transition: 1s
   a
     display: inline-block
     padding: 3px 18px 3px
@@ -539,7 +545,7 @@ body
     border-radius: 50%;
     text-align center
     line-height: 100px;
-    color: #5483B1
+    color: #9b4040
     &:before 
       font-family: "iconfont" !important;
       font-weight normal
@@ -571,7 +577,7 @@ body
       a
         color #333
         &:hover
-          color: #5483B1
+          color: #9b4040
         &:before
           content:''
           position: absolute
@@ -599,17 +605,17 @@ body
           box-shadow: 0 0 3px #D8E2EB inset
     li:hover 
       a:before 
-        border 1px solid #5483B1
-        -webkit-box-shadow: 0 0 4px #5483B1 inset
-        box-shadow: 0 0 4px #5483B1 inset 
+        border 1px solid #9b4040
+        -webkit-box-shadow: 0 0 4px #9b4040 inset
+        box-shadow: 0 0 4px #9b4040 inset 
       a:after
-        background: #5483B1
+        background: #9b4040
       .tite 
-        border-bottom: 1px solid #5483B1
+        border-bottom: 1px solid #9b4040
         &:after
-          background: #5483B1
+          background: #9b4040
       .date
-        border: 1px solid #5483B1     
+        border: 1px solid #9b4040     
   .tite
     position:relative
     bottom: -4px
@@ -719,7 +725,7 @@ body
   .fa 
     display: inline-block
     background: #F2F7FB
-    color #5483b1
+    color #9b4040
     padding: 0 10px
     border-radius: 30px 0 0 30px
     margin: 0 5px
@@ -736,8 +742,8 @@ body
       content: ">>"
       padding-left: 0.15em
     &:hover
-      -webkit-box-shadow: 0 -1px 4px #5483B1 inset
-      box-shadow: 0 -1px 4px #5483B1 inset   
+      -webkit-box-shadow: 0 -1px 4px #9b4040 inset
+      box-shadow: 0 -1px 4px #9b4040 inset   
 /* post navigator*/
 .post-nav
   overflow: hidden
@@ -848,6 +854,7 @@ body
         margin-right .2em
 /* toc*/
 #toc
+  top:100px
   li 
     font-weight bold
   .toc-child
@@ -906,6 +913,8 @@ table
     width: 100%
   .layout-r
     width: 100%
+  .layout-g
+    padding-top: 200px
   #toc
     display: none
   #sidebar .search-pla
@@ -928,17 +937,25 @@ table
         color: #FFF
       &::-webkit-input-placeholder
         color: #FFF
+  #header
+    padding: 10px
   #nav-menu
-    position: relative
+    position: initial
     text-align: center
+    margin: 0 auto
     a
       padding: 0 15px
       line-height: 27px
       height: 27px
       font-size: 13px
+  .logoImg, span#hidden
+      transition: 1s
+      display: block
+      margin: 5px auto
   .site-name
-    margin-bottom: 20px
+    margin-bottom: 10px
     text-align: center
+    float: none !important
   .content_container
     padding-right: 0
   .body_container
